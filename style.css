@@ -1,5 +1,5 @@
 :root {
-    /* Enhanced color scheme with more vibrant primary color */
+   
     --primary-color: #4a6cff;
     --primary-hover: #3a5bee;
     --secondary-color: #2b3847;
@@ -17,7 +17,7 @@
     --header-height: 60px;
 }
 
-/* Base styles */
+
 body {
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
@@ -34,7 +34,7 @@ body {
     flex-direction: column;
 }
 
-/* Header styles - FIXED */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -67,14 +67,13 @@ body {
     align-items: center;
 }
 
-/* Content wrapper - Added to account for fixed header */
+
 .content-wrapper {
     display: flex;
     height: calc(100vh - var(--header-height));
     margin-top: var(--header-height);
 }
 
-/* Sidebar styles - FIXED */
 .sidebar {
     width: 100%;
     max-width: 100%;
@@ -154,7 +153,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Canvas styles - adjusted for fixed sidebar */
+
 .canvas {
     flex: 1;
     padding: 20px;
@@ -240,7 +239,7 @@ body {
     transform: scale(1.1);
 }
 
-/* Form controls */
+
 label {
     display: block;
     margin-bottom: 6px;
@@ -303,7 +302,7 @@ textarea {
     transform: translateY(-2px);
 }
 
-/* Editor panel */
+
 .editor-panel {
     position: fixed;
     bottom: 0;
@@ -348,7 +347,7 @@ textarea {
     min-width: 100%;
 }
 
-/* Options container */
+
 .options-container {
     margin-top: 12px;
     border: 1px solid var(--border-color);
@@ -364,7 +363,7 @@ textarea {
     gap: 8px;
 }
 
-/* Dark mode */
+
 .dark-mode {
     background-color: var(--dark-bg);
     color: var(--dark-text);
@@ -412,7 +411,7 @@ textarea {
     background-color: rgba(255, 255, 255, 0.03);
 }
 
-/* Dragging */
+
 .dragging {
     opacity: 0.6;
     border: 2px dashed var(--primary-color) !important;
@@ -434,7 +433,7 @@ textarea {
     color: var(--primary-color);
 }
 
-/* Preview */
+
 .preview-container {
     display: none;
     position: fixed;
@@ -487,7 +486,7 @@ textarea {
     gap: 12px;
 }
 
-/* Code container */
+
 .code-container {
     background-color: #f5f5f5;
     padding: 15px;
@@ -520,7 +519,6 @@ textarea {
     color: #9da5b4;
 }
 
-/* Toggle switch */
 .toggle-container {
     display: flex;
     align-items: center;
@@ -574,7 +572,6 @@ input:checked + .toggle-slider:before {
     transform: translateX(26px);
 }
 
-/* Responsive menu */
 .menu-toggle {
     display: block;
     font-size: 24px;
@@ -593,7 +590,6 @@ input:checked + .toggle-slider:before {
     display: none;
 }
 
-/* Popup Editor */
 .popup-editor {
     display: none;
     position: fixed;
@@ -751,7 +747,7 @@ input:checked + .toggle-slider:before {
     font-weight: bold;
 }
 
-/* Responsive media queries */
+
 @media screen and (min-width: 768px) {
     .container {
         flex-direction: row;
@@ -776,7 +772,7 @@ input:checked + .toggle-slider:before {
     
     .canvas {
         padding: 25px;
-        margin-left: 280px; /* Width of sidebar */
+        margin-left: 280px; 
         width: calc(100% - 280px);
     }
     
@@ -817,7 +813,7 @@ input:checked + .toggle-slider:before {
     }
 }
 
-/* Mobile layout - sidebar collapsed */
+
 @media screen and (max-width: 767px) {
     .sidebar {
         width: 100%;
@@ -846,7 +842,6 @@ input:checked + .toggle-slider:before {
 
 
 
-/* Additional enhancement for focus states */
 input:focus, 
 select:focus, 
 textarea:focus, 
@@ -855,14 +850,14 @@ button:focus {
     box-shadow: 0 0 0 3px rgba(74, 108, 255, 0.25);
 }
 
-/* Improve accessibility */
+
 a:focus, 
 button:focus {
     outline: 2px solid var(--primary-color);
     outline-offset: 2px;
 }
 
-/* Loading indicators */
+
 .loading {
     position: relative;
     pointer-events: none;
@@ -902,7 +897,6 @@ button:focus {
     }
 }
 
-/* Tooltip implementation */
 [data-tooltip] {
     position: relative;
 }
@@ -930,7 +924,6 @@ button:focus {
     visibility: visible;
 }
 
-/* Notification system */
 .notification {
     position: fixed;
     top: 20px;
