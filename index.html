@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Form Designer</h1>
+        <div class="header-actions">
+            <div class="toggle-container">
+                <span>Dark Mode</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+            </div>
+            <button id="preview-btn" class="save-btn">Preview</button>
+            <button id="save-btn" class="save-btn">Save</button>
+        </div>
+    </div>
+    
+    <div class="container">
+        
+        <div class="sidebar">
+            <div class="components-title">Components</div>
+            <div class="component-item" data-type="input">
+                <span>Input</span>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="component-item" data-type="select">
+                <span>Select</span>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="component-item" data-type="textarea">
+                <span>Textarea</span>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="component-item" data-type="checkbox">
+                <span>Checkbox</span>
+                <button class="add-btn">+</button>
+            </div>
+        </div>
+        
+        <div class="canvas">
+            <h2>Create Your Form</h2>
+            <div class="form-container" id="form-container"></div>
+        </div>
+    </div>
+    
+    <div class="editor-panel" id="editor-panel">
+        <h3>Edit Component</h3>
+        <div class="editor-form" id="editor-form"></div>
+    </div>
+
+    <div class="preview-container" id="preview-container">
+        <div class="preview-content">
+            <h2>Form Preview</h2>
+            <div id="preview-form"></div>
+            <div class="code-container">
+                <pre id="html-code"></pre>
+            </div>
+            <div class="preview-actions">
+                <button id="copy-html-btn" class="save-btn">Copy HTML</button>
+                <button id="close-preview-btn" class="save-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
